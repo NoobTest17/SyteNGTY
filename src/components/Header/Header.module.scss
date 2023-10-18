@@ -1,0 +1,31 @@
+.header {
+  background-color: #800000;
+  height: 60px;
+  color: whitesmoke;
+  //color: #F5F5DC;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+
+  .logo {
+    font-size: 1.7em;
+  }
+
+  .NavBar {
+    width: 40%;
+    padding-right: 10px;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+    }
+  }
+}

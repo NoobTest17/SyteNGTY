@@ -1,8 +1,13 @@
+import React from 'react';
+import {Layouts} from "./components/Commons/Layouts";
+
 function App() {
   return (
-    <div>
-      App
-    </div>
+      <div>
+        <Layouts>
+
+        </Layouts>
+      </div>
   );
 }
 
