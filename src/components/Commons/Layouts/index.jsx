@@ -1,18 +1,14 @@
 import React from 'react';
-import {Header} from "../../Header";
-import {Footer} from "../../Footer";
-import styles from './Layouts.module.scss'
+import { Header } from '../../Header';
+import { Footer } from '../../Footer';
+import styles from './Layouts.module.scss';
 
-export const Layouts = () => {
+export const Layouts = ({ children }) => {
   return (
-      <div className={styles.main}>
-        <Header/>
-        body
-        тема
-        <p>
-          Роль женщин в русской революции 1917 года
-        </p>
-        <Footer/>
-      </div>
+    <div className={styles.main}>
+      <Header />
+      <div>{children}</div>
+      <Footer />
+    </div>
   );
 };
