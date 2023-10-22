@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './MainPage.module.scss';
-import Test from './Modal';
+import { MyModal } from '../../components/Commons/MyModal/MyModal';
 
 const news = [
   {
@@ -24,20 +24,38 @@ const news = [
 ];
 
 export const MainPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden'; // Запрет скролла
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = 'auto'; // Разрешение скролла
+  };
+
   return (
     <section className={styles.main}>
       <article>
         <h1>Роль женщин в Русской Революции 1917 года</h1>
-        <p>
-          Добро пожаловать на наш сайт, посвященный истории и важной роли, которую женщины сыграли в
-          русской революции 1917 года. Этот период русской истории был временем перемен, борьбы за
-          равенство и социальную справедливость, и женщины стояли в первых рядах этого движения.
-        </p>
-
-        <Test>
-          <h2>Тест</h2>
-          <p>Тест</p>
-        </Test>
+        <div className={styles.content}>
+          <p>
+            Добро пожаловать на наш сайт, посвященный истории и важной роли, которую женщины сыграли в
+            русской революции 1917 года. Этот период русской истории был временем перемен, борьбы за
+            равенство и социальную справедливость, и женщины стояли в первых рядах этого движения.
+          </p>
+          <button onClick={openModal}>Подробнее</button>
+        </div>
+        <MyModal isOpen={isModalOpen} onRequestClose={closeModal}>
+          <h1>Роль женщин в Русской Революции 1917 года</h1>
+          <p>
+            Добро пожаловать на наш сайт, посвященный истории и важной роли, которую женщины сыграли в
+            русской революции 1917 года. Этот период русской истории был временем перемен, борьбы за
+            равенство и социальную справедливость, и женщины стояли в первых рядах этого движения.
+          </p>
+        </MyModal>
       </article>
     </section>
   );
