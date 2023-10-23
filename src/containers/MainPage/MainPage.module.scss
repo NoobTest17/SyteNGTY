@@ -10,10 +10,17 @@
     justify-content: space-between;
     align-items: center;
 
+    p {
+      width: 95%;
+    }
+
     button {
-      width: 250px;
+      width: 150px;
       height: 40px;
+      background-color: #e8e80e;
+      border-radius: 5px;
+      border: 1px solid #444444;
+      color: #474747;
     }
   }
-
 }

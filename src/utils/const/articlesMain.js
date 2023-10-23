@@ -1,4 +1,4 @@
-export const news = [
+export const mainArticles = [
   {
     id: 1,
     title: 'О женщинах и революции',
