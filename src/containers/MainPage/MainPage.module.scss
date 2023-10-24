@@ -1,26 +1,40 @@
 .main {
   padding: 10px;
 
-  p {
+
+  .presenterText {
     font-size: 16px;
-  }
 
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-      width: 95%;
+    .presenterText__title {
+      margin: 25px 0 0 0;
+      font-size: 24px;
+      font-family: 'Nunito', sans-serif;
     }
 
-    button {
-      width: 150px;
-      height: 40px;
-      background-color: #e8e80e;
-      border-radius: 5px;
-      border: 1px solid #444444;
-      color: #474747;
+    .presenterText__content {
+
+      p {
+        max-width: 85%;
+      }
     }
   }
+
+  //.content {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //
+  //  p {
+  //    width: 91%;
+  //  }
+  //
+  //  button {
+  //    width: 100px;
+  //    height: 40px;
+  //    background-color: #e8e80e;
+  //    border-radius: 5px;
+  //    border: 1px solid #444444;
+  //    color: #474747;
+  //  }
+  //}
 }

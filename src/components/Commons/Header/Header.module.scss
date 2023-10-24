@@ -2,7 +2,6 @@
   background-color: #800000;
   height: 60px;
   color: whitesmoke;
-  //color: #F5F5DC;
 
   display: flex;
   justify-content: space-between;
@@ -14,7 +13,11 @@
   }
 
   .NavBar {
-    width: 40%;
+    width: 100%;
+
+    max-width: 560px;
+    min-width: 422px;
+
     padding-right: 10px;
 
     .list {
