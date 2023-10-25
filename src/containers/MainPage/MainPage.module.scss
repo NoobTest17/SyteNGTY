@@ -6,35 +6,42 @@
     font-size: 16px;
 
     .presenterText__title {
-      margin: 25px 0 0 0;
+      margin: 25px 0 25px 0;
       font-size: 24px;
       font-family: 'Nunito', sans-serif;
     }
 
     .presenterText__content {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
 
-      p {
-        max-width: 85%;
+      .presenterText__content_block {
+        width: 65%;
+      }
+
+      img {
+        width: 480px;
       }
     }
   }
-
-  //.content {
-  //  display: flex;
-  //  justify-content: space-between;
-  //  align-items: center;
-  //
-  //  p {
-  //    width: 91%;
-  //  }
-  //
-  //  button {
-  //    width: 100px;
-  //    height: 40px;
-  //    background-color: #e8e80e;
-  //    border-radius: 5px;
-  //    border: 1px solid #444444;
-  //    color: #474747;
-  //  }
-  //}
 }
+
+//.content {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//
+//  p {
+//    width: 91%;
+//  }
+//
+//  button {
+//    width: 100px;
+//    height: 40px;
+//    background-color: #e8e80e;
+//    border-radius: 5px;
+//    border: 1px solid #444444;
+//    color: #474747;
+//  }
+//}
